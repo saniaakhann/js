@@ -19,7 +19,17 @@ console.log(myArr.includes(9))//datatype bool
 const newArr=myArr.join()//string m covert krdeta h 
 
 //slice ,splice interview q
-console.log("A",myArr
+console.log("A",myArr);
+const myn1=myArr.slice(1,3);//ismai original array same rehta hai aur dusra array bech ki value de deta
+console.log(myn1)
+console.log("B",myArr);
+console.log(myArr)
+
+//+++ splice
+const myn2=myArr.splice(1,3)//ismai last range bhi include hoti plus original array change hota
+console.log(myn2)
+console.log("C",myArr)
+
 
 
 
