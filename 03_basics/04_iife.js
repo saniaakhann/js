@@ -1,0 +1,18 @@
+// Immediatly Invoked Function Ecpressions (IIFE) ()()
+// INTERWIE QUESTION WHY WE USE?
+//1. TO IMMEDIATELY EXECUTE
+//2. TO SKIP GLOBAL PPLLUTION PROBLEM
+// FOR THIS WE WRAP FUNCTION IN () AND THEN CALLIT BY ()
+ (function chai (){
+    // NAMED IIFEE
+        console.log("DB CONNECTED");
+    })();
+
+//BU USING ARROW FUNCTION WE CREATE UNAMED IFFEE
+(
+    (name)=>{
+        console.log(`DB CONNECTED ${name}`);
+    }
+)('sania')
+
+// AGR DO IIFEE LIKHE H TO ; ZARURI HAI FUNCTION KE BAD LAGANA WRNA SECOND WALA ERROR DEGAA
