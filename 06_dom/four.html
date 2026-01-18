@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;color:aliceblue">
+    <ul class="language">
+        <li>javascrpit</li>
+    </ul>
+</body>
+<script>
+    //we have to add one more lang abovee
+    function addLanguage(langName){
+           const li= document.createElement("li")
+           li.innerText=`${langName}`
+           document.querySelector('.language').appendChild(li)
+
+    }
+    addLanguage("python" )
+    addLanguage("TYPESCRIPT")
+
+    // NOW DOING THE SAME THING IN A OPTIMISED WAY
+    function addOptiLanguage(langName){
+       const li= document.createElement("li")
+       li.appendChild(document.createTextNode(langName))
+       document.querySelector(".language").appendChild(li)
+    }
+
+    //Edit
+   const secondlang= document.querySelector("li:nth-chlid(2)")
+  // secondlang.innerHTML="mojo"
+  const newli=document.createElement("li")
+  newli.textContent='mojo'
+  secondlang.replaceWith(newli)
+
+  //edit
+   const firstlang=document.querySelector("l:first-chlid")
+   firstlang.outerHTML=`<li>typescript</li>`
+
+   //remove
+
+   const lastlang=document.querySelector("li:last-chlid")
+   lastlang.remove()
+</script>
+</html>
