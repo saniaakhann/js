@@ -1,3 +1,37 @@
+// document.getElementById(""title)
+//document.getElementByClassName("heading") reutrn data type is html collection
+to set some attribute
+//const title=document.getElementById('TITLE').setAttribute("class","test")
+//title.style.color="green"
+
+//mostly used how to add 
+//title.textContent title.innerHTML title.innerTEXT
+
+//mostly used query selector css selector #title .heading p:firstchild
+//document.querySelector("h1")pehle wala
+// document.querySelectorAll("h2") all
+
+//to change color of first item of list
+//const myul=document.querySelector("ul")
+//myul.querySelector(li"").style.color="green"
+
+IMP querySelectorAll gives nodelist which is not completely array ispe map nhi lgta
+getElementByClassName gives html collection jispe for each bhi nhi lgta na map
+
+// nodelist ke elemnt ko select krne k lie [0] index value deni hoti hai
+
+//nodelist mai for each hota h therefore usko use krke elemnt ko select kr skte
+// templist.forEach((function(l){
+    l.style.backgroundColor="green"
+})
+
+// to conver html colllection to array 
+Array.from(tempClassLIst)
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +55,11 @@
             Et aperiam cum delectus quisquam corporis tenetur at earum, illum voluptatibus, 
             atque minima dignissimos, soluta modi sint. Numquam debitis rem voluptate vero.</p>
     </div>
-    
+   <ul>
+    <li class="list">one</li>
+    <li class="list">two</li>
+    <li class="list">three</li>
+    <li class="list">four</li>
+    </ul>
 </body>
 </html>
