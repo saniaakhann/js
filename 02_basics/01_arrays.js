@@ -1,9 +1,9 @@
-// arrays
-const myArr=[0,1,2,3,4,5,6]
+// arrays object hai 
+const myArr=[0,1,2,3,4,5,6]// elemnt diff bhi ho skte,resizeble hote
 const myHeros=["srk","aaryan"]
 const myArr2=new Array(1,2,3,4,)
 console.log(myArr[0])
-//INT QUES It makes shallow copy same ref point not deep one
+//INT QUES It makes shallow copy same ref point mtlb oruginal m bhi change hojaega not deep one
 
 //array methods
 myArr.push(6)//add in end
@@ -14,6 +14,7 @@ console.log(myArr)
 
 
 console.log(myArr.includes(9))//datatype bool
+console.log(myArr.indexOf(3));
 
 //imp 
 const newArr=myArr.join()//string m covert krdeta h 

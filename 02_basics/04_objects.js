@@ -1,5 +1,7 @@
 // singleton object using constructor
 /// CONST User=new Object{}
+
+// not singleton 
 const tinderUser={}
 tinderUser.id="123abc"
 tinderUser.name="samay"
@@ -14,6 +16,8 @@ const regularUser ={
     }
 }
 console.log(regularUser.fullname.userfullname.firstname);
+console.log(objects.keys(tinderUser));;//array mai ans ata array ki properties lg skti h
+//dot dot krke
 
 // to combile or merge objects mainly spread ... 
 const obj1={1:"a",2:"b"}

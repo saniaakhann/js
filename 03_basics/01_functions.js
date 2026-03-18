@@ -13,7 +13,7 @@ function addTwoNum(num1,num2){
 }
 const result=addTwoNum(3,4);
 console.log("result",result);
-
+//username = sam krne ke bad if statement hmesha false hi rhega
 function loginUserMessage(username="sam"){
     if(username=== undefined){
         console.log("please enter a username");
@@ -24,7 +24,7 @@ function loginUserMessage(username="sam"){
 }
 console.log(loginUserMessage);//when we pass nothing then undefined ata h
 
-
+// for shpping cart kitne item add kie jao
 //when we dont know kitne parameter ane wale haii
 // rest opr use krte parameter ke aage tin dot ...num1 
 //... lasr value pe hi lgta h uske bad wala nhi  leta error de dega

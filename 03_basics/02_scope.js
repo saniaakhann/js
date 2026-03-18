@@ -17,7 +17,7 @@ function one (){
         const website=" youtube"
         console.log(username);
      }
-    // console.log(website);
+    // console.log(website);error kyuki scope ke bhr h
      two()
 }
 one()
@@ -29,7 +29,7 @@ one()
     return num+1
   }
   
-console.log(addtwo(5))//ismai error ajaegaa hoisting
+console.log(addtwo(5))//ismai error ajaegaa hoisting kyuki variable m hold kra h dusra sirf function h
 const addtwo=function(num){
     return num+2
 }  

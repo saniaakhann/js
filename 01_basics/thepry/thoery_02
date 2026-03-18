@@ -1,0 +1,14 @@
+// java execution context //how does js run your file
+//it is single threaed
+1.first global execution context (this) in broweer this value is window obj
+2.function execution context
+1st phase -> memory creation phase only jgh alloc hoti
+2nd-> execution phase
+har function ke lie alg sandbox banta (new variaable envirnment and thread) hai har bar
+jiske andr ek memory phase and execution phase hota h
+
+++++++++++++++++=
+
+call stack
+
+global execution hota and then lifo works 

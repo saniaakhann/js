@@ -1,13 +1,18 @@
+// there are two ways to declare a object 
+//1 literal 2 constructor
 //interview SINGLET0N??  apne type ka unique
 //JAB Object ko constructor se banate to singleton // object.create
-//litral se to nhi singleton
-const mySym= Symbol("key1")
+//litral se to nhi singleton mtlb multiple instances ban jate hai 
+
+// obj litrals
+// object m key and value hote haii
+const mySym= Symbol("key1")// intervwwe q to declare s symbol in key 
 const jsUser={
     name:"hitesh",
-    "full name":"sania khan",
-
+    "full name":"sania khan",// isko dot se access nahi kr skte isko []
+//aese krte h acccess
     age:18,
-    [mySym]:"Key1",
+    [mySym]:"Key1",// square bracket m likhte symbol ko acces bhi wese hi karte
     location:"jaipur",
     email:"hitesh@google.com",
     isLoggedIn:false,
@@ -37,4 +42,8 @@ jsUser.email="saniakjam@chatgpt.com"
 jsUser.greeting= function(){
     console.log("hello ji");
 }
+jsUser.greeting2= function(){
+    console.log(`hello js user,${this.name}`);
+}
 console.log(jsUser.greeting());
+console.log(jsUser.greeting2());

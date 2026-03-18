@@ -1,7 +1,7 @@
 const marvel_heros=['thor','ironman','spiderman']
 const dc=['superman','flash','batman']
 //push just adds  array in array ORIGINAL ARRAY CHANGE
-//marvelherospush(dc)
+//marvelheros.push(dc)
 console.log(marvel_heros)
 //csole.log(marvel_heros[3][1])
 
@@ -14,9 +14,14 @@ console.log(allHeros)
 const all_new_heros=[...marvel_heros,...dc]
 console.log(all_new_heros)
 
-//to covert into array
-console.log(Array.isArray("hitesh"))
-console.log(Array.from("HITESH"));
+//array ke andr array ko bhr nikalne k lie flat use krte
+const combinedArrat=[1,2,3,[4,5,6],[7,8,9,[6,7]]]
+const normalArray=combinedArrat.flat(Infinity)
+console.log(normalArray);
+
+//to covert into array agr data string m h ya kisi aur chiz m
+console.log(Array.isArray("hitesh"))//to check if it is array
+console.log(Array.from("HITESH"));//we use from to convert
 
 //INTRESTING INTERVIEW Q
 console.log(Array.from({name:"hitesh"}));// reutns empty array
