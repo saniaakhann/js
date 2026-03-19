@@ -1,7 +1,9 @@
 //for of array specific
 //["","",""]
-//[{},{},{}]
+//[{},{},{}] for each is used 
 
+
+//FOR OF 
 // arr pe lg jata h
 const arr =[1,2,3,4,5];
 for (const num of arr){
@@ -30,15 +32,19 @@ console.log(map)
 
 
 // FOR IN IS USED FOR OBJECTS
+
 const myObj={
     js:"javascript",
     cpp:"c++"
 }
+
 for (const key in myObj){
     console.log(`${key} shortcut is for ${myObj[key]}`)
 }
 
 // ARRAYS MAI BHI YEHI USE HOTA HAI FOR IN
+// SIRF KEY MAI INDEX VALUE UTHA KE DE DETA HAI REAL VALUE NAHI
+//ISLIE PROG[KEY] DALA TAKI PURI VALUE AYE
 //MAP MAI NHI KRTE KYUKI FOR ITERable nhi hota
 const prog=["java","js","c++"]
 for(const key in prog){
