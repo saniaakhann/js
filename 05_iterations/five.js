@@ -1,8 +1,8 @@
 // for each 
 //inbuild function hai 
-//sidha dot krke access krte
+//sidha dot krke access krte arr.forEach()
 // iske andr function likh skte 
-// arrow aur normal pr nam nahi likhte
+// arrow aur normal pr nam nahi likhte functiom(){} and not function helllo(){}
 //aur agr predefined fun call kr rhe hote to usmai () nhi lgate\
 // arhument m kch bhi likh skte item ,val etc
 
