@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //async functions
+    // time milli sec mai hota hai 1 sec = 1000ms
+    //set timeout() ISMAI FUNCTIONN AUR TIMEOUT LIKHTE HAI
+    // ek hi bar execute krta h utne time bd
+    setTimeout( function(){
+        console.log("sania")
+    },2000);
+ //only refernce likhte 
+    const sayHitesh=function(){
+        console.log("farah")
+    }
+    setTimeout(sayHitesh,3000);
+
+    // to change chai and code with khair chlta hai 2 sec bad
+ const changeMe=setTimeout( function(){
+    const h1 = document.querySelector("h1");
+    h1.innerText="khair chlta hai"
+   },3000)
+
+   // to stop set timeout function before it happen if we want to
+   // clearTimeout() ref dete hai us function ka
+   document.querySelector("#stop").addEventListener('click',function(){
+    clearTimeout(changeMe)   })
+
+
+</script>
+</html>

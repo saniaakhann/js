@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> chai aur javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+//setInterval
+let intervalid;// bhr define kiya h kyuki clear interval mai as a refermce jana hai
+// ya to function ka nam define lrte h ya to use variable ka refrence dete hai dono nhi
+ const valid=function (){
+    console.log("sania",Date.now())
+ }
+document.querySelector("#start").addEventListener("click",function(){
+  intervalid=  setInterval(valid,1000)
+})
+document.querySelector("#stop").addEventListener('click',function(){
+    clearInterval(intervalid)   })
+
+</script>
+</html>
