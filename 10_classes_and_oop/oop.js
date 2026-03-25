@@ -48,3 +48,6 @@ console.log(userOne.constructor);
 //EK CONSTRUCTOR FUNCTION CREATE HOTA HAI
 //THIS KEYWORD ARGUMENT INJECT KRTA HAI
 //FINAL VALUE MIL JATI H
+
+//Every function in JavaScript has a prototype object, and that prototype has a constructor property pointing back to the function.
+//When we create an object using new, the object’s internal prototype links to that prototype, so it can access the constructor.
